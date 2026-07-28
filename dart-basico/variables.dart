@@ -13,9 +13,9 @@ void main() {
   String nombre = 'Richard';
   int num1 = 10;
   int num2 = 20;
-  String num3 = '30';
- 
-  print('${num1 + num2 + num3}');
   
-  print('Mi nombre es $nombre tengo ${num1 + num2}');
+ 
+  print('${num1 + num2}');
+  
+  print('Mi nombre es $nombre $nombre2 tengo ${num1 + num2}');
 }
