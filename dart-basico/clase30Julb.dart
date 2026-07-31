@@ -39,5 +39,6 @@ void main() {
   }
   
   print(frutas.length);
+
+  frutas.forEach((fruta) => print(fruta));
   
-}
