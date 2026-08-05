@@ -1,0 +1,3 @@
+Flutter Clean (limpia el proyecto )
+Flutter pub get (descarga los paquetes o dependencias)
+flutter pub outdated
