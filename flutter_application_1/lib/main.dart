@@ -80,7 +80,9 @@ class _MyHomePageState extends State<MyHomePage> {
         // TRY THIS: Try changing the color here to a specific color (to
         // Colors.amber, perhaps?) and trigger a hot reload to see the AppBar
         // change color while the other colors stay the same.
-        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
+        elevation: 40,
+        // (RF comento esta linea para probar otras opciones)backgroundColor: Theme.of(context).colorScheme.inversePrimary,
+        backgroundColor: Colors.blueAccent,
         // Here we take the value from the MyHomePage object that was created by
         // the App.build method, and use it to set our appbar title.
         // title: Text(widget.title),
