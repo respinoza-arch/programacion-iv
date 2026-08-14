@@ -1,5 +1,6 @@
+//import 'package:componentes/pantallas/home_screen.dart';
+import 'package:componentes/pantallas/list_view.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/homeScreen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -29,10 +30,10 @@ class MyApp extends StatelessWidget {
         //
         // This works for code too, not just values: Most code changes can be
         // tested with just a hot reload.
-        colorScheme: .fromSeed(seedColor: Colors.deepPurple),
+        colorScheme: .fromSeed(seedColor: const Color.fromARGB(255, 26, 17, 200)),
       ),
-      // home: const MyHomePage(title: 'Flutter Demo Home Page'),
-      home: Screen(),
+      //home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: ListViewScreen(),
     );
   }
 }
@@ -82,13 +83,10 @@ class _MyHomePageState extends State<MyHomePage> {
         // TRY THIS: Try changing the color here to a specific color (to
         // Colors.amber, perhaps?) and trigger a hot reload to see the AppBar
         // change color while the other colors stay the same.
-        elevation: 40,
-        // (RF comento esta linea para probar otras opciones)backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-        backgroundColor: Colors.blueAccent,
+        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         // Here we take the value from the MyHomePage object that was created by
         // the App.build method, and use it to set our appbar title.
-        // title: Text(widget.title),
-        title: Text("Programación IV"),
+        title: Text(widget.title),
       ),
       body: Center(
         // Center is a layout widget. It takes a single child and positions it
@@ -109,12 +107,6 @@ class _MyHomePageState extends State<MyHomePage> {
           // wireframe for each widget.
           mainAxisAlignment: .center,
           children: [
-            
-            Text("Texto 1"),
-            Text("Texto 2"),
-            Text('$_counter'),
-
-
             const Text('You have pushed the button this many times:'),
             Text(
               '$_counter',
