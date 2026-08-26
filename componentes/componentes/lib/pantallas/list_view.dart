@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class ListViewScreen extends StatelessWidget {
 
   final options=const [
-' Super Mario','Call of Dufty', 'WoW', 'Zelda'
+' Super Mario B','Call of Dufty', 'WoW', 'Zelda'
 
   ];
    
