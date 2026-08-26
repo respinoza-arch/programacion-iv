@@ -8,13 +8,13 @@ Richard Espinoza Almeida
 ## Herramientas usadas
 
 
-Android Studio
+- Android Studio
 
-Visual Studio Code
+- Visual Studio Code
 
-Dart
+- Dart
 
-Flutter
+- Flutter
 
 
 <img width="926" height="333" alt="image" src="https://github.com/user-attachments/assets/7d01d1c0-ac2c-4907-a2fc-a35c371185ef" />
