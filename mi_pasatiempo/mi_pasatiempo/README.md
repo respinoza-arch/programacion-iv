@@ -1,17 +1,21 @@
-# mi_pasatiempo
+# Proyecto Integrador 1
+# Mi pasatiempo favorito
 
-A new Flutter project.
+Programación IV: Desarrollo de aplicaciones móviles
 
-## Getting Started
+Richard Espinoza Almeida
 
-This project is a starting point for a Flutter application.
+## Herramientas usadas
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+Android Studio
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Visual Studio Code
+
+Dart
+
+Flutter
+
+
+<img width="926" height="333" alt="image" src="https://github.com/user-attachments/assets/7d01d1c0-ac2c-4907-a2fc-a35c371185ef" />
+
