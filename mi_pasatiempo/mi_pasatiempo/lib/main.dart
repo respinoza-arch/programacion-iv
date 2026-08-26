@@ -72,12 +72,14 @@ class _PantallaPrincipalState extends State<PantallaPrincipal> {
       bool _mostrarDetalles = false;
 
   void _cambiarMensaje() {
+
     setState(() {
       _mostrarDetalles = !_mostrarDetalles;
       if (_mostrarDetalles) {
         _mensajeInteractivo = "¡Me gusta pescar en ríos y en el mar! Desde muy temprano. Hay mucha tranquilidad";
       } else {
         _mensajeInteractivo = "¡Presiona el botón para conocer los sitios favoritos!";
+      
       }
     });
   }
@@ -122,7 +124,7 @@ class _PantallaPrincipalState extends State<PantallaPrincipal> {
                 padding: const EdgeInsets.all(16.0),
                 child: Column(
                   children: [
-                    // Ícono representativo de pesca (Requisito 2)
+                    // Ícono representativo de pesca
                     Icon(
                       Icons.phishing_rounded, // Ícono oficial de Flutter para pesca/anzuelo
                       size: 80,
@@ -130,7 +132,7 @@ class _PantallaPrincipalState extends State<PantallaPrincipal> {
                     ),
                     const SizedBox(height: 15),
                     
-                    // Textos informativos (Requisito 2)
+                    // Textos informativos
                     Text(
                       'La Pesca Deportiva',
                       style: GoogleFonts.poppins(
@@ -142,7 +144,7 @@ class _PantallaPrincipalState extends State<PantallaPrincipal> {
                     const SizedBox(height: 10),
                     
                     Text(
-                      'La pesca es mi cable a tierra. Me conecta con la naturaleza, pone a prueba mi paciencia y me regala momentos de desconexión total junto al agua.',
+                      'La pesca es mi pasatiempo favorito. Me conecta con la naturaleza, pone a prueba mi paciencia, me desconecta totalmente del día a día.',
                       textAlign: TextAlign.center,
                       style: GoogleFonts.roboto(
                         fontSize: 16,
@@ -155,7 +157,7 @@ class _PantallaPrincipalState extends State<PantallaPrincipal> {
             ),
             const SizedBox(height: 20),
 
-            // Contenedor secundario para la interacción (Requisito 2 y 3)
+            // Contenedor secundario para la interacción
             Container(
               padding: const EdgeInsets.all(16),
               decoration: BoxDecoration(
@@ -170,12 +172,13 @@ class _PantallaPrincipalState extends State<PantallaPrincipal> {
                   fontSize: 15,
                   fontStyle: FontStyle.italic,
                   color: Colors.blue.shade900,
+                  //color: Colors.blue.shade900,
                 ),
               ),
             ),
             const Spacer(),
 
-            // Botón interactivo (Requisito 2 y 3)
+            // Botón interactivo
             ElevatedButton.icon(
               onPressed: _cambiarMensaje,
               icon: const Icon(Icons.waves),
