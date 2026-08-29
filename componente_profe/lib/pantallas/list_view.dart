@@ -15,7 +15,7 @@ const ListViewScreen({super.key});
   Widget build(BuildContext context) {
     return  Scaffold(
       appBar: AppBar(title: Text('List View'), 
-      backgroundColor: Colors.blueGrey,
+      //backgroundColor: Colors.blueGrey,
       elevation: 10,
       ),
       // body: Center(
