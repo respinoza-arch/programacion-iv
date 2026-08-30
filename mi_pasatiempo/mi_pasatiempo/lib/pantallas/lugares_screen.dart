@@ -8,17 +8,32 @@ const LugaresScreen({super.key});
   Widget build(BuildContext context) {
     return  Scaffold(
       appBar: AppBar(
-        title: const Text('Lugares para Pescar'),
+        title: Text('Lugares para Pescar'),
         backgroundColor: Colors.indigo.shade700,
         foregroundColor: Colors.white,
       ),
       body: Padding(
-        padding: const EdgeInsets.all(15.0),
+        padding: EdgeInsets.all(15.0),
         child: Column(
           children: [
             Expanded(
               child: ListView(
-                children: const [
+                children: [
+
+                  Card(
+                    elevation: 3,
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(12),
+                    ),
+                    clipBehavior: Clip.antiAlias, 
+                    child: Image.asset(
+                      'assets/lugares.png',
+                      height: 180,
+                      width: double.infinity,
+                      fit: BoxFit.cover, 
+                    ),
+                  ),
+                  Divider(height: 25, thickness: 1),
 
                   Card(
                     elevation: 4,
@@ -54,12 +69,12 @@ const LugaresScreen({super.key});
             const SizedBox(height: 15),
             ElevatedButton.icon(
               onPressed: () => Navigator.pushReplacementNamed(context, 'home'),
-              icon: const Icon(Icons.home),
-              label: const Text('Volver al Inicio'),
+              icon: Icon(Icons.home),
+              label: Text('Volver al Inicio'),
               style: ElevatedButton.styleFrom(
                 backgroundColor: Colors.indigo.shade700,
                 foregroundColor: Colors.white,
-                minimumSize: const Size(double.infinity, 50),
+                minimumSize: Size(double.infinity, 50),
               ),
             ),
           ],
