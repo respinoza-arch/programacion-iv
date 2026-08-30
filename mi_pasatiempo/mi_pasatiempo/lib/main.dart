@@ -4,6 +4,7 @@ import 'package:mi_pasatiempo/pantallas/home_screen.dart';
 import 'package:mi_pasatiempo/pantallas/lugares_screen.dart';
 import 'package:mi_pasatiempo/pantallas/nudos_screen.dart';
 
+
 void main() {
   runApp(const MyApp());
 }
