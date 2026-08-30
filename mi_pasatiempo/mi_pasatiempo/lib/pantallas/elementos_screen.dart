@@ -90,6 +90,37 @@ const ElementosScreen({super.key});
           ],
         ),
       ),
+
+      floatingActionButton: FloatingActionButton(
+        backgroundColor: Colors.blue.shade700,
+        foregroundColor: Colors.white,
+        child: Icon(Icons.lightbulb_outline),
+        onPressed: () {
+          showDialog(
+            context: context,
+            builder: (BuildContext context) {
+              return AlertDialog(
+                title: const Row(
+                  children: [
+                    Icon(Icons.gavel, color: Colors.blue),
+                    SizedBox(width: 10),
+                    Text('Mantenimiento'),
+                  ],
+                ),
+                content: Text(
+                  'Recuerda enjuagar tu carrete y caña con agua dulce después de cada jornada, especialmente si pescas en entornos salinos, para evitar la corrosión.',
+                ),
+                actions: [
+                  TextButton(
+                    onPressed: () => Navigator.of(context).pop(),
+                    child: Text('Entendido', style: TextStyle(color: Colors.blue)),
+                  ),
+                ],
+              );
+            },
+          );
+        },
+      ),
     );
   }
 }
