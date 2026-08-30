@@ -1,3 +1,5 @@
+import 'package:componente_profe/pantallas/images_screen.dart';
+
 import 'pantallas/list_view.dart';
 import 'package:flutter/material.dart';
 import 'package:componente_profe/pantallas/card_screen.dart';
@@ -27,12 +29,13 @@ class MyApp extends StatelessWidget {
 /*       theme: ThemeData(
         primarySwatch: Colors.blue,
       ), */
-      initialRoute: 'cardscreen',
+      initialRoute: 'imagescreen',
       //home: ListViewScreen(),
       routes: {
         '/':(context) => HomeScreen(),
         'listviewscreen':(context) => ListViewScreen(),
         'cardscreen':(context) => CardScreen(),
+        'imagescreen':(context) => ImageScreen(),
       },
     );
   }
