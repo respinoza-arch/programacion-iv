@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:peliculas_app/widgets/card_swiper.dart';
+import 'package:peliculas_app/widgets/card_swiper_old.dart';
 import 'package:peliculas_app/widgets/movie_slider.dart';
 
 class HomeScreen extends StatelessWidget {

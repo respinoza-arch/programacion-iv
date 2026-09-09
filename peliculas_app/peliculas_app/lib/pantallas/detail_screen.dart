@@ -21,6 +21,7 @@ const DetailScreen({super.key});
   }
 }
 
+// ignore: camel_case_types
 class _customSlider extends StatelessWidget {
   const _customSlider({super.key});
 
