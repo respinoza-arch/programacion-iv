@@ -1,12 +1,18 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+import 'package:mi_pasatiempo/providers/provider.dart';
 import 'package:mi_pasatiempo/pantallas/elementos_screen.dart';
 import 'package:mi_pasatiempo/pantallas/home_screen.dart';
 import 'package:mi_pasatiempo/pantallas/lugares_screen.dart';
 import 'package:mi_pasatiempo/pantallas/nudos_screen.dart';
 
-
 void main() {
-  runApp(const MyApp());
+  runApp(
+    ChangeNotifierProvider(
+      create: (_) => PescaProvider(),
+      child: const MyApp(),
+    ),
+  );
 }
 
 class MyApp extends StatelessWidget {
@@ -21,12 +27,12 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       initialRoute: 'home',
-      routes:{
-        'home': (_) => HomeScreen(),
-        'elementos': (_) => ElementosScreen(),
-        'lugares': (_) => LugaresScreen(),
-        'nudos':(_) => NudosScreen()
-      }
+      routes: {
+        'home': (_) => const HomeScreen(),
+        'elementos': (_) => const ElementosScreen(),
+        'lugares': (_) => const LugaresScreen(),
+        'nudos': (_) => const NudosScreen(),
+      },
     );
   }
 }
